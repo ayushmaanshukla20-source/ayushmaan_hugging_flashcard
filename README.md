@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gemini API Integration using Python
 
 A beginner-friendly Python project demonstrating how to integrate Google's Gemini AI models using the OpenAI Python SDK and Google's OpenAI-compatible API endpoint.
@@ -157,3 +158,6 @@ GitHub: [@ayushmaanshukla20-source](https://github.com/ayushmaanshukla20-source)
 ---
 
 ⭐ If you find this project useful, consider giving it a star!
+=======
+# ayushmaan_ai_training
+>>>>>>> origin/main
