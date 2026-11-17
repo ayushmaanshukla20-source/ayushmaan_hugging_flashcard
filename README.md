@@ -1,30 +1,42 @@
-<<<<<<< HEAD
-# Gemini API Integration using Python
+# AI Flashcard Generator using Gemini 3.6 Flash
 
-A beginner-friendly Python project demonstrating how to integrate Google's Gemini AI models using the OpenAI Python SDK and Google's OpenAI-compatible API endpoint.
+An AI-powered Flashcard Generator built using Python and Google's Gemini API. This project uses Gemini 3.6 Flash to generate topic-based flashcards, helping students learn and revise technical concepts more effectively.
 
-This project explores how to send prompts to an AI model, manage API credentials securely, and retrieve AI-generated responses using Python.
+The application demonstrates how to integrate a Large Language Model (LLM) into a Python application using API authentication and prompt engineering.
 
 ## 🚀 Features
 
-- Integration with Google Gemini API.
-- Uses the OpenAI Python SDK for API communication.
+- Generate AI-powered flashcards based on user-provided topics.
+- Uses Google Gemini 3.6 Flash as the AI model.
+- Accepts custom topics through user input.
+- Generates structured learning content.
+- Integrates Google's Gemini API with Python.
 - Secure API key management using environment variables.
-- Supports system and user messages.
-- Generates AI responses through chat completions.
-- Simple and beginner-friendly Python implementation.
 
 ## 🛠️ Technologies Used
 
 - **Python** – Core programming language.
-- **Google Gemini API** – AI model integration.
-- **OpenAI Python SDK** – API client.
+- **Google Gemini API** – AI-powered flashcard generation.
+- **Gemini 3.6 Flash** – Language model.
+- **OpenAI Python SDK** – API client using Google's OpenAI-compatible endpoint.
 - **Python-dotenv** – Environment variable management.
+
+## 🤖 AI Model
+
+**Gemini 3.6 Flash**
+
+The application uses Google's Gemini model through the OpenAI-compatible API interface.
+
+API Endpoint:
+
+```text
+https://generativelanguage.googleapis.com/v1beta/openai/
+```
 
 ## 📁 Project Structure
 
 ```text
-Gemini-API-Integration/
+huggingface_flashcards/
 │
 ├── app.py
 ├── .env
@@ -43,10 +55,10 @@ git clone YOUR_GITHUB_REPOSITORY_URL
 ### 2. Navigate to the Project Directory
 
 ```bash
-cd Gemini-API-Integration
+cd huggingface_flashcards
 ```
 
-### 3. Create a Virtual Environment (Optional)
+### 3. Create a Virtual Environment
 
 ```bash
 python -m venv .venv
@@ -55,11 +67,13 @@ python -m venv .venv
 Activate it:
 
 **Windows:**
+
 ```bash
 .venv\Scripts\activate
 ```
 
 **Mac/Linux:**
+
 ```bash
 source .venv/bin/activate
 ```
@@ -72,79 +86,52 @@ pip install openai python-dotenv
 
 ### 5. Configure API Key
 
-Create a `.env` file in the root directory:
+Create a `.env` file:
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-Get your API key from [Google AI Studio](https://aistudio.google.com/apikey).
+Get your API key from:
 
-### 6. Run the Project
+https://aistudio.google.com/apikey
+
+### 6. Run the Application
 
 ```bash
 python app.py
 ```
 
-## 💻 How It Works
+## 🔍 How It Works
 
-1. Loads the API key from the `.env` file using `python-dotenv`.
-2. Initializes the OpenAI client with Google's OpenAI-compatible API endpoint.
-3. Selects the Gemini model.
-4. Sends system and user messages using the chat completions interface.
-5. Receives the AI-generated response.
-6. Prints the response in the terminal.
-
-## 📌 Example Prompt
-
-**System Message:**
-```text
-You are a concise programming assistant.
-```
-
-**User Message:**
-```text
-Explain what an API is in exactly two sentences.
-```
-
-The model generates a response based on the provided instructions.
-
-## 🔐 Security
-
-- Never upload your actual API key to GitHub.
-- Store credentials in the `.env` file.
-- Add `.env` to `.gitignore`.
-
-Example `.gitignore`:
-
-```gitignore
-.env
-.venv/
-__pycache__/
-*.pyc
-```
-
-If an API key has already been pushed publicly, revoke it and generate a new one.
+1. Loads the Gemini API key from the `.env` file.
+2. Initializes the OpenAI Python client with Google's compatible API endpoint.
+3. Connects to Gemini 3.6 Flash.
+4. Accepts a topic from the user.
+5. Sends the topic and instructions to the AI model.
+6. Receives the generated flashcards.
+7. Displays the output for learning and revision.
 
 ## 🎯 Learning Objectives
 
 Through this project, I explored:
 
-- Understanding APIs and API endpoints.
-- Integrating AI models into Python applications.
-- Using the OpenAI-compatible API format.
-- Managing environment variables.
-- Working with system and user prompts.
-- Understanding AI model responses.
+- Understanding Large Language Models (LLMs).
+- Integrating Gemini API with Python.
+- Using OpenAI-compatible API interfaces.
+- Managing API credentials securely.
+- Understanding system and user prompts.
+- Learning prompt engineering.
+- Generating structured AI responses.
 
 ## 🔮 Future Improvements
 
-- Implement conversation history.
-- Add streaming AI responses.
-- Build a simple graphical user interface.
-- Experiment with different Gemini models.
-- Implement prompt engineering techniques.
-- Explore RAG (Retrieval-Augmented Generation).
+- Develop a web-based flashcard interface.
+- Add interactive question-and-answer functionality.
+- Implement flashcard categories and difficulty levels.
+- Save generated flashcards for future revision.
+- Add user progress tracking.
+- Explore Retrieval-Augmented Generation (RAG).
 
 ## 👨‍💻 Author
 
@@ -157,7 +144,4 @@ GitHub: [@ayushmaanshukla20-source](https://github.com/ayushmaanshukla20-source)
 
 ---
 
-⭐ If you find this project useful, consider giving it a star!
-=======
-# ayushmaan_ai_training
->>>>>>> origin/main
+⭐ If you find this project interesting, consider giving the repository a star!
